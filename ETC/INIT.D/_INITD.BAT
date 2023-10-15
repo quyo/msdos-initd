@@ -30,8 +30,8 @@ CALL %__run cache       xhdd
 CALL %__run cdromsys    emptycd
 CALL %__run cdromsys    xdvd2 udvd2 videcdd
 CALL %__run cdrom       shsucdx mscdex nwcdex
-CALL %__run mouse       cute_v21 cute_v20 cute_v19 logitech
-CALL %__run sound       unisound
+CALL %__run mouse       cute_v21 cute_v20 cute_v19 logitech microsft
+CALL %__run sound       dosbox-x ao486
 
 CALL %__run lfn         doslfn
 
