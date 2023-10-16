@@ -11,42 +11,22 @@ CALL %__path\..\initdcfg.bat
 
 CALL %__run autoexec    pre
 
-CALL %__run path        hx
-CALL %__run path        dos4g
-CALL %__run path        dos32a
-CALL %__run path        cwsdpmi
-CALL %__run path        bcpp
-CALL %__run path        bp
-CALL %__run path        fpc
-CALL %__run path        djgpp
-CALL %__run path        freedos
-CALL %__run path        bat
+CALL %__run path
+CALL %__run 4dos
 
-CALL %__run 4dos        aliases
+CALL %__run keyb
+CALL %__run ansi
+CALL %__run cache
+CALL %__run cdromsys
+CALL %__run cdrom
+CALL %__run mouse
+CALL %__run sound
 
-CALL %__run keyb        jkeybgr keybgr mkeyb fdkeyb xkeyb
-CALL %__run ansi        nansi ansiplus
-CALL %__run cache       xhdd
-CALL %__run cdromsys    emptycd
-CALL %__run cdromsys    xdvd2 udvd2 videcdd
-CALL %__run cdrom       shsucdx mscdex nwcdex
-CALL %__run mouse       cute_v21 cute_v20 cute_v19 logitech microsft
-CALL %__run sound       dosbox-x ao486
-
-CALL %__run lfn         doslfn
-
-CALL %__run apm         fdapm
-
-CALL %__run dpmi        hdpmi16 hdpmi16i
-CALL %__run dpmi        hdpmi32 hdpmi32i
-CALL %__run dpmi        hxldr32
-
-CALL %__run misc        kstack
-CALL %__run misc        misterfs
-CALL %__run misc        q87
-
-CALL %__run eof         qmt
-CALL %__run eof         mem
+CALL %__run lfn
+CALL %__run apm
+CALL %__run dpmi
+CALL %__run misc
+CALL %__run eof
 
 CALL %__run autoexec    post
 
