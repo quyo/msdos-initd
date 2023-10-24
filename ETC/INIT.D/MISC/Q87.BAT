@@ -1,3 +1,3 @@
 @ECHO OFF
 
-CALL c:\apps\emulator\q87\v413\q87.bat
+CALL c:\drv\emulator\q87\v413\q87.bat
