@@ -21,6 +21,7 @@ CALL %__run cdromsys
 CALL %__run cdrom
 CALL %__run mouse
 CALL %__run sound
+CALL %__run net
 
 CALL %__run lfn
 CALL %__run apm

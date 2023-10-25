@@ -1,3 +1,3 @@
 @ECHO OFF
 
-%freedosbin\mem.exe /c /n
+%FREEDOSBIN\mem.exe /c /n
