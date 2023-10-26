@@ -12,17 +12,17 @@ UNSET /Q INITD_%[1]
 
 SET __skip=N
 
-DO __i = 0 TO %@DEC[%__options]
+DO __j = 0 TO %@DEC[%__options]
     
-    SET __o=%[INITD_%[1]_%@WORD[%__i,%__option]]
-    UNSET /Q INITD_%[1]_%@WORD[%__i,%__option]
+    SET __o=%[INITD_%[1]_%@WORD[%__j,%__option]]
+    UNSET /Q INITD_%[1]_%@WORD[%__j,%__option]
     
     IFF "%__o" == "" THEN
-        ECHO ERROR: missing setting INITD_%[1]_%@WORD[%__i,%__option]
+        ECHO ERROR: missing setting INITD_%[1]_%@WORD[%__j,%__option]
         PAUSE
     ENDIFF
 
-    :: ECHO INITD_%[1]_%@WORD[%__i,%__option]=%__o
+    :: ECHO INITD_%[1]_%@WORD[%__j,%__option]=%__o
     
     SET __choice=%@IF[%@INDEX[%__o,Y] != -1,Y,N]
     SET __prompt=%@IF[%@INDEX[%__o,P] != -1,Y,N]
@@ -31,10 +31,10 @@ DO __i = 0 TO %@DEC[%__options]
     
     IF "%__skip" == "Y" ITERATE
     IF "%__space" == "Y" ECHO.
-    IF "%__prompt" == "Y" INKEY /C /K"YN" /W2 Run %[1]\%@WORD[%__i,%__option]? (Y/N)  %%__choice
+    IF "%__prompt" == "Y" INKEY /C /K"YN" /W2 Run %[1]\%@WORD[%__j,%__option]? (Y/N)  %%__choice
     
     IFF "%__choice" == "Y" THEN
-        CALL %__path\%[1]\%@WORD[%__i,%__option].bat
+        CALL %__path\%[1]\%@WORD[%__j,%__option].bat
         SET __skip=%@IF[%__continue != Y,Y,N]
     ENDIFF
 
@@ -45,7 +45,7 @@ ENDDO
 
 UNSET /Q __option
 UNSET /Q __options
-UNSET /Q __i
+UNSET /Q __j
 UNSET /Q __o
 UNSET /Q __choice
 UNSET /Q __prompt

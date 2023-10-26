@@ -1,5 +1,11 @@
 @ECHO OFF
 
+SET INITD=
+    path 4dos
+    keyb ansi cache cdromsys cdrom mouse sound net
+    lfn apm dpmi misc
+    eof
+
 ::
 :: Y = enabled
 :: N = disabled
@@ -10,7 +16,7 @@
 ::
 
 ::
-:: autopre.bat must set _POST=Y if needed
+:: autopre.bat must set INITD_AUTOEXEC_POST=Y if needed
 ::
 SET INITD_AUTOEXEC_PRE=Y
 SET INITD_AUTOEXEC_POST=N
