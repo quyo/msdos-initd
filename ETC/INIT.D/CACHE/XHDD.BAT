@@ -1,3 +1,3 @@
 @ECHO OFF
 
-DEVICEHIGH c:\drv\cache\xhdd\20220601\xhdd.sys /H /S8
+DEVICEHIGH c:\drv\cache\xhdd\20220601\xhdd.sys /H /E /S8
