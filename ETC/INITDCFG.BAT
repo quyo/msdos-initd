@@ -2,7 +2,9 @@
 
 SET INITD=
     path 4dos
-    keyb ansi cache.pre cdrom.sys cdrom cache.pst mouse sound net
+    keyb ansi vesa
+    cache.pre cdrom.sys cdrom cache.pst
+    mouse sound net
     lfn apm dpmi misc
     eof
 
@@ -47,6 +49,11 @@ SET INITD_ANSI=nansi ansiplus
 SET INITD_ANSI_NANSI=YS
 SET INITD_ANSI_ANSIPLUS=Y
 
+SET INITD_VESA=univbe53 univbe65 univbe67
+SET INITD_VESA_UNIVBE53=N
+SET INITD_VESA_UNIVBE65=N
+SET INITD_VESA_UNIVBE67=N
+
 SET INITD_CACHE.PRE=xhdd
 SET INITD_CACHE.PRE_XHDD=N
 
@@ -62,7 +69,7 @@ SET INITD_CDROM_MSCDEX=Y
 SET INITD_CDROM_NWCDEX=Y
 
 SET INITD_CACHE.PST=smartdrv
-SET INITD_CACHE.PST_SMARTDRV=Y
+SET INITD_CACHE.PST_SMARTDRV=N
 
 SET INITD_MOUSE=cute_v21 cute_v20 cute_v19 ms_v820 ms_v901 logitech
 SET INITD_MOUSE_CUTE_V21=Y
