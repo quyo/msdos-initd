@@ -19,6 +19,6 @@ GOTO PRE_EOF
 :PRE_EOF
 SET SOUND=C:\SB16
 SET MIDI=SYNTH:1 MAP:E
-c:\drv\sound\unisound\v080a\unisound.com /V90 /VW90 /VF90
+c:\drv\sound\unisound\v080a\unisound.com /V90 /VW90 /VF90 /VC90
 
 :EOF

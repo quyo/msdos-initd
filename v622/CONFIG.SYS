@@ -401,7 +401,5 @@ DEVICE=c:\drv\mem\dosmax\v21\dosmax.exe /REPORT:+ /PAUSE:- /NOPAUSE:+
 
 
 [COMMON]
-COUNTRY=049,850,c:\dos\v622\country.sys
-; DEVICEHIGH=c:\dos\v622\power.exe adv:min
-; INSTALLHIGH=c:\drv\mem\cloaking\v201\cloaking.exe
-SHELL=c:\apps\shell\4dos\v800\4dos.com c:\apps\shell\4dos\v800\ /P
+COUNTRY=049,850,c:\dos\ms-dos\v622\country.sys
+SHELL=c:\drv\shell\4dos\v800\4dos.com c:\drv\shell\4dos\v800\ /P
